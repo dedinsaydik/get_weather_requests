@@ -1,18 +1,17 @@
 import requests
+from urllib.parse import urljoin
 
 
 cities = ["Лондон", "svo", "Череповце"]
 
 
 for city in cities:
-    url = f"https://wttr.in/{city}"
+    url = urljoin("https://wttr.in/", "city")
     payload = {'n': '',
                'T': '',
                'q': '',
-               'u': '',
                'lang': 'ru',
                '?M': '',
-               '?m': '',
                '?n': '',
                '?q': ''}
     response = requests.get(url, params=payload)
