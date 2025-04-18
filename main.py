@@ -2,7 +2,7 @@ import requests
 from urllib.parse import urljoin
 
 
-cities = ["Лондон", "svo", "Череповце"]
+cities = ["Лондон", "svo", "Череповец"]
 
 
 for city in cities:
